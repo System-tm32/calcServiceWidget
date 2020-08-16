@@ -1,0 +1,118 @@
+@import 'fonts';
+@import '_variables';
+@import 'libs/normalize';
+h1 {
+  font-size: 24px;
+  color: $primary-color-text;
+}
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background: #ffffff;
+  box-shadow: $block-shadow;
+  border-radius: 15px;
+}
+
+.row {
+  margin: 0 -30px;
+  display: flex;
+  padding-bottom: 40px;
+}
+.col {
+  padding: 0 30px;
+  width: 100%;
+  flex-direction: row;
+}
+.material-icons.md-35 {
+  font-size: 35px;
+}
+.icon {
+  position: absolute;
+  right: -35px;
+}
+.btn {
+  border-radius: 10px;
+  padding: 11px 70px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  &.primary {
+    background: linear-gradient(270deg, #b643d6 -10.39%, #d75ac0 77.6%);
+    color: #fff;
+  }
+  &.secondary {
+    background: #ffffff;
+    border: 1px solid #d75ac0;
+  }
+  &:hover {
+    background: linear-gradient(270deg, #b643d6 -10.39%, #d75ac0 77.6%);
+    cursor: pointer;
+    color: #fff;
+  }
+  &:active {
+    background: gray;
+  }
+}
+.mainPage {
+  padding-top: 50px;
+  h1 {
+    padding-bottom: 10px;
+  }
+  .description {
+    color: $secondary-color;
+  }
+  .item {
+    box-shadow: $block-shadow;
+    padding: 40px 25px;
+    border-radius: 5px;
+    .button {
+      position: relative;
+      font-weight: bold;
+      display: inline-block;
+      height: 35px;
+      display: relative;
+      span {
+        display: inline-block;
+        line-height: 35px;
+      }
+    }
+    .title {
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: left;
+      font-weight: bold;
+    }
+    .description {
+      padding: 30px 0;
+      color: $secondary-color;
+      max-width: 250px;
+    }
+  }
+}
+.form {
+  .input-group {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    label {
+      display: block;
+      padding-bottom: 15px;
+    }
+  }
+}
+select {
+  box-shadow: 1px 5px 10px 5px rgba(171, 171, 171, 0.25);
+  border-radius: 5px;
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  width: inherit;
+}
+
+input {
+  border: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid $secondary-color;
+  width: inherit;
+}
