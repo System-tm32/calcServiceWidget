@@ -37,5 +37,25 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyDKvPqj4IiLcuRTkZJ1lIzh_6MUOvng9ss',
+        authDomain: 'calcservice-64f78.firebaseapp.com',
+        databaseURL: 'https://calcservice-64f78.firebaseio.com',
+        projectId: 'calcservice-64f78',
+        storageBucket: 'calcservice-64f78.appspot.com',
+        messagingSenderId: '986134276549',
+        appId: '1:986134276549:web:8b89ff80d71307b0e183ac',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
